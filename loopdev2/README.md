@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Images representing what was done during my tenure...
+Images are shown below while PDF's are hyperlinked:
+
+[loopcreateaccount.pdf](https://github.com/enzorcortes/WebDesignProjects/blob/3bc7b1841af3cd4918fb3edc64cccdfe9c12c057/images/loopcreateaccount.pdf)
+
+[loopconcept1.pdf](https://github.com/enzorcortes/WebDesignProjects/blob/3bc7b1841af3cd4918fb3edc64cccdfe9c12c057/images/loopconcept1.pdf)
+
+<img src="../images/loopjoinnotif.png" width="100%">
+<img src="../images/looplogin.png" width="100%">
+<img src="../images/looppasswordchangenotif.png" width="100%">
+<img src="../images/loopchatstart.png" width="100%">
+<img src="../images/loopchatend.png" width="100%">
+<img src="../images/createlogin.png" width="100%">
+<img src="../images/createcreateaccount.png" width="100%">
+<img src="../images/createpasswordreset.png" width="100%">
+
+Thank you!
