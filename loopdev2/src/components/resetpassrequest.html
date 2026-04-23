@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=NYUPerstare&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: white;
+                font-family: 'NYUPerstare', sans-serif;
+                color: #160041;
+                text-align: center;
+            }
+            #container{
+                margin-left: auto;
+                margin-right: auto;
+                padding: 80px;
+                width: 1000px;
+                border: 1px solid black;
+                background-color: #F4F0FC;
+                position: relative;
+                border-radius: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 120px;
+            }
+            h1{
+                font-size: 36px;
+                margin: 20px 0px 50px 0px;
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                color: #160041;
+            }
+            button{
+                margin-top: 30px;
+                background-color: #6D3CD4;
+                width: 220px;
+                height: 50px;
+                border-radius: 25px;
+                font-size: 18px;
+                font-family: 'NYUPerstare', sans-serif;
+                color: white;
+                font-weight: bold;
+                border: none;
+                display: inline-block;
+            }
+            footer{
+                margin-top: 100px;
+                text-align: center;
+            }
+            footer p{
+                margin: 0px;
+                color: #85789E;
+            }
+            footer a{
+                font-size: 12px;
+                color: #160041;
+            }
+            .loop-logo{
+                width: 350px;
+                height: auto;
+                margin: 0 auto 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img src="../../public/loopfavicon.png" class="loop-logo" alt="Loop Logo">
+            <h1>You have requested a password reset!</h1>
+            <p>In this email, you will find a link to reset your password. <br><br>
+                If this was you, you can use the button below to start the reset process.<br><br>
+                If this wasn't you, please <a href="#" target="_blank">contact us</a>.</p>
+            <a href="https://create.nyu.edu/loop"><button>Reset Password</button></a>
+            <footer>
+                <img src="../../public/images/silverlogo.webp" width="400px" alt="Silver Logo">
+                <p><a href="https://create.nyu.edu/loop/" target="_blank">View Website</a>&nbsp; &nbsp;|&nbsp; &nbsp;<a href="#">Unsubscribe</a></p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Your Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .profile-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .profile-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-username {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .profile-email {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="profile-container">
+        <h2 class="text-center mb-4">Edit Your Account</h2>
+        
+        <div class="profile-header">
+            <div class="profile-avatar" id="profile-avatar">
+                S
+            </div>
+            <div class="profile-details">
+                <div class="profile-username" id="profile-username">SilverExpert01</div>
+                <div class="profile-email" id="profile-email">abc123@nyu.edu</div>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="username">Change Username</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="username" placeholder="Enter new username">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="current-password" placeholder="Enter current password">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <small class="text-muted d-block mb-2">(min. 6 chars, 1 uppercase, 1 number, cannot be current password)</small>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="new-password" placeholder="Enter new password">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="retype-new-password">Retype New Password</label>
+                <div class="input-group">
+                    <input type="password" class="form-control" id="retype-new-password" placeholder="Retype new password">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Update Profile</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#username').on('input', function() {
+            const username = $(this).val();
+            if (username) {
+                $('#profile-avatar').text(username.charAt(0).toUpperCase());
+            } else {
+                $('#profile-avatar').text('S');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

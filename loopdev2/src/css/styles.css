@@ -1,0 +1,357 @@
+@font-face {
+  font-family: 'NYUPerstare';
+  src: url('../fonts/NYUPerstareRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General Body Style */
+body {
+    background-color: white;
+    font-family: 'NYUPerstare', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 200px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: 300px; /* Adjust for smaller screens */
+    }
+}
+
+.login-box {
+    border: 2px solid #d8b4f2; /* Lighter purple border */
+    background-color: #f3e8ff; /* Lighter purple background */
+}
+
+/* Login Text */
+.login-text {
+    font-family: 'NYUPerstare', Arial, sans-serif;
+}
+
+.h3{
+    font-family: 'NYUPerstare', Arial, sans-serif;
+}
+
+
+/* Loop Favicon */
+.loop-favicon {
+    max-width: 100%; /* Adjust this value to control the maximum width */
+    height: auto;   /* Maintain aspect ratio */
+    max-height: 300px; /* Optional: Set a maximum height */
+}
+
+/* Footer */
+footer {
+    background-color: #848484;
+    padding: 20px 0;
+}
+
+footer address {
+    font-size: 14px;
+    color: #555;
+}
+
+footer .logos img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.footer-text {
+    font-family: 'NYUPerstare', Arial, sans-serif;
+    color: white;
+}
+
+.card {
+    border-radius: 8px;
+    border: 2px solid purple; /* Border for login/create/reset boxes */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better look */
+}
+
+/* Form Elements */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #5c5cff; /* Custom color for primary buttons */
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #9999ff; /* Custom color for secondary buttons */
+    border: none;
+}
+
+/* Text Links */
+a {
+    text-decoration: underline;
+    color: #5c5cff;
+}
+
+a:hover {
+    color: #3a3aff;
+}
+
+/* Page-Specific Styling */
+/* This ensures the pages are visually balanced and aligned properly */
+
+/* Left Side Logo in Main Pages */
+main .col-md-6 img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Specific to Footer Logo Sizing */
+footer .logos img {
+    max-width: 80px;
+}
+
+.footer-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+footer .text-right {
+    text-align: right;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+
+    footer .text-right {
+        text-align: center;
+    }
+    
+   
+
+    footer .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* styles.css */
+.left-align {
+    padding-left: 0;
+}
+
+.footer-dark .container-fluid {
+    padding-left: 0;
+}
+
+.password-requirements {
+    font-size: 0.8em; /* Adjust the size as needed */
+    color: #888; /* Medium grey color */
+    display: block; /* Ensures it appears on a new line */
+    margin-top: 5px; /* Optional: adds some space above the requirements */
+}
+
+.username-requirements {
+    font-size: 0.8em; /* Adjust the size as needed */
+    color: #888; /* Medium grey color */
+    text-align: center; /* Center the text */
+    margin-top: 5px; /* Space above the text */
+}
+
+/* CHATBOT PAGE START */
+* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.chat-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f3e6ff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+/* Sidebar Section */
+.sidebar {
+    width: 300px;
+    background-color: #d1b3ff;
+    padding: 80px 20px 20px 20px;
+    overflow-y: auto;
+    color: #000;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #000;
+}
+
+.sidebar ul li:hover {
+    background-color: #b399ff;
+}
+
+/* Main Chatbox Section */
+.main-chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/* User Account Section */
+.user-account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #d1b3ff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #000;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.user-account img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Header Section */
+.chat-header1 {
+    text-align: center;
+    margin: 0px 0;
+}
+
+.chat-header1 h1 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.chat-header2 {
+    text-align: center;
+    margin: 200px 0;
+}
+
+.chat-header2 h1 {
+    font-size: 2rem;
+    color: #000;
+}
+
+/* Chat Input Section */
+.chat-input {
+    display: flex;
+    align-items: center;
+    background-color: #d1b3ff;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.chat-input .search-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.send-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion {
+    background-color: #d1b3ff;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.accordion:hover {
+    background-color: #b399ff;
+}
+
+.panel {
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* CHATBOT PAGE END */

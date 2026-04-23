@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar Toggle -->
+        <div class="sidebar-toggle">
+            <img src="sidebar.svg" alt="Toggle Sidebar">
+                    <!-- Search Icon -->
+         <div class="search-toggle">
+            <img class="search-icon" src="search.svg" alt="Search">
+        <div class="search-toggle">
+            <img class="filter-convo" src="filterconvo.svg" alt="Filter">
+        <div class="search-toggle">
+            <img class="settings" src="settings.svg" alt="Settings">
+        </div>    
+        </div>
+        </div>
+        </div>
+        
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h2>Most Recent</h2>
+            <ul>
+                <li>Sandra's Breakdup</li>
+                <li>Tony Failing Classes</li>
+                <li>George, PTSD</li>
+                <!-- Add more list items as needed -->
+            </ul>
+            <h2>Previous 7 Days</h2>
+            <ul>
+                <li>Mahav's Pet Died</li>
+                <li>Al's Phobias</li>
+                <!-- Add more list items as needed -->
+            </ul>
+            <h2 style="color: darkgreen;">Acceptable Conversations</h2>
+            <ul>
+                <li>Mahav's Pet Died</li>
+                <li>Tony Failing Classes</li>
+                <!-- Add more list items as needed -->
+            </ul>
+            <h2 style="color: rgb(114, 122, 0);">Moderately Acceptable Conversations</h2>
+            <ul>
+                <li>Sandra's Breakup</li>
+            <h2 style="color: rgb(163, 0, 0);">Unacceptable Conversation</h2>
+            <ul>
+                <li>Sandra's Breakup</li>
+                <li>George, PTSD</li>
+                <!-- Add more list items as needed -->
+            </ul>
+        </div>
+        
+        <!-- Main Chatbox Section -->
+        <div class="main-chat">
+            <!-- User Account Section -->
+            <div class="user-account">
+                <span>Ricardo</span>
+                <img src="usersquare.svg" alt="User Account">
+                <div class="search-toggle">
+                    <img class="Write" src="pencilsquare.svg" alt="Write">
+                </div>    
+            </div>
+            
+            <!-- Header Section -->
+            <div class="chat-header1">
+                <h1>Welcome back, Ricardo.</h1>
+            </div>
+            <div class="chat-header2">
+                <h1>How can I help you today?</h1>
+            </div>
+            
+            <!-- Chat Input Section -->
+            <div class="chat-input">
+                <input type="text" placeholder="Message Loop" style="color: rgb(0, 0, 0);" />
+                <button class="send-button">
+                    <img src="sendmessage.svg" alt="Send Message">
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Main container */
+    .chat-container {
+        display: flex;
+        height: 100vh;
+        background-color: #f3e6ff;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Sidebar Toggle Button */
+    .sidebar-toggle {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        cursor: pointer;
+    }
+
+    /* Sidebar Section */
+    .sidebar {
+        width: 300px;
+        background-color: #d1b3ff;
+        padding: 80px 20px 20px 20px;
+        overflow-y: auto;
+        color: #000;
+    }
+    
+    .sidebar h2 {
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    .sidebar ul {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    
+    .sidebar ul li {
+        padding: 10px;
+        cursor: pointer;
+        transition: background 0.2s;
+        color: #000;
+    }
+    
+    .sidebar ul li:hover {
+        background-color: #b399ff;
+    }
+
+    /* Main Chatbox Section */
+    .main-chat {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    /* User Account Section */
+    .user-account {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #d1b3ff;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: #000;
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .user-account img {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Header Section */
+    .chat-header1 {
+        text-align: center;
+        margin: 0px 0;
+    }
+    .chat-header1 h1 {
+        font-size: 2rem;
+        color: #000;
+    }
+
+    .chat-header2 {
+        text-align: center;
+        margin: 200px 0;
+    }
+    .chat-header2 h1 {
+        font-size: 2rem;
+        color: #000;
+    }
+
+    /* Chat Input Section */
+    .chat-input {
+        display: flex;
+        align-items: center;
+        background-color: #d1b3ff;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .chat-input input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #000000;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .chat-input .search-icon {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .send-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .send-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .accordion {
+    background-color: #d1b3ff;
+    color: #000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.2s;
+}
+
+.accordion:hover {
+    background-color: #b399ff;
+}
+
+.panel {
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+</style>
+
